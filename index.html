@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  data-bs-theme="light"
+  data-color-theme="Blue_theme"
+  data-layout="vertical"
+  data-boxed-layout="boxed"
+  data-card="shadow"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotizador HiQ</title>
+  </head>
+  
+  <body class="link-sidebar" data-sidebartype="full">
+    <div id="root"></div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
